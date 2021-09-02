@@ -70,9 +70,9 @@ export default ({ buttons }) =>
                     children: buttons.map((b) =>
                          MenuButton({
                               text: b.title,
-                              isSelected: window.currentPage.value === buttons.indexOf(b),
+                              isSelected: window.router.current.name === b.name,
                               onClick: () => {
-                                   window.currentPage.setValue(buttons.indexOf(b));
+                                   window.router.goTo(b.name);
                               },
                          })
                     ),

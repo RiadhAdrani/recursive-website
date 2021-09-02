@@ -5,6 +5,7 @@ import Container from "./recursivejs/components/Container.js";
 import TextView from "./recursivejs/components/TextView.js";
 import CreateComponent from "./recursivejs/CreateComponent.js";
 import InlineSelector from "./recursivejs/InlineSelector.js";
+import Router from "./recursivejs/Router.js";
 import VDOM from "./recursivejs/VDOM.js";
 
 const underConstruction = (text) =>
@@ -33,43 +34,31 @@ const underConstruction = (text) =>
           ],
      });
 
-const pages = [
-     { name: "/", title: "Recursive", component: () => Main() },
-     {
-          name: "get-started",
-          title: "Start Here",
+window.router = new Router([
+     Router.Route({ name: "/", title: "Recursive", component: () => Main() }),
+     Router.Route({
+          name: "/get-started",
+          title: "Get Started",
           component: () => underConstruction("Get Started"),
-     },
-     {
-          name: "documentation",
-          title: "Documentation",
+     }),
+     Router.Route({
+          name: "/documentation",
+          title: "Docs",
           component: () => underConstruction("Docs"),
-     },
-     {
-          name: "tutorials",
+     }),
+     Router.Route({
+          name: "/tutorial",
           title: "Tutorials",
-          component: () => underConstruction("Tutorials"),
-     },
-     {
-          name: "about-us",
-          title: "About Us",
-          component: () => underConstruction("About Us"),
-     },
-];
+          component: () => underConstruction("Tutorial"),
+     }),
+     Router.Route({
+          name: "/about-us",
+          title: "About",
+          component: () => underConstruction("About us"),
+     }),
+]);
 
 window.theme = VDOM.setState(true);
-window.currentPage = VDOM.setState(0);
-
-const Router = () => {
-     console.log(history.pushState);
-
-     history.pushState(
-          {},
-          `${pages[window.currentPage.value].title}`,
-          `${pages[window.currentPage.value].name}`
-     );
-     return pages[window.currentPage.value].component();
-};
 
 const body = () =>
      new CreateComponent({
@@ -88,9 +77,9 @@ const body = () =>
           }),
           children: [
                NavBar({
-                    buttons: pages,
+                    buttons: window.router.routes,
                }),
-               Router(),
+               window.router.render(),
                Footer(),
           ],
      });

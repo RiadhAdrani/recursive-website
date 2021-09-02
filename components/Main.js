@@ -102,7 +102,7 @@ export default () =>
                                         }),
                                         events: {
                                              onClick: () => {
-                                                  window.currentPage.setValue(1);
+                                                  window.router.goTo("/get-started");
                                              },
                                         },
                                    }),
@@ -115,7 +115,7 @@ export default () =>
                                         }),
                                         events: {
                                              onClick: () => {
-                                                  window.currentPage.setValue(3);
+                                                  window.router.goTo("/tutorials");
                                              },
                                         },
                                    }),
@@ -133,7 +133,7 @@ export default () =>
                     children: [
                          Section(
                               "Declarative",
-                              "Recursive makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug."
+                              "Recursive makes it painless to create interactive UIs. Design simple views for each state in your application, and Recursive will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug."
                          ),
                          Section(
                               "Component-Based",

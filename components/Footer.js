@@ -32,7 +32,7 @@ export default () =>
                     }),
                     events: {
                          onClick: () => {
-                              window.open("https://github.com/RiadhAdrani", "_blank");
+                              window.open("https://github.com/RiadhAdrani/recursive", "_blank");
                          },
                     },
                     text: [
