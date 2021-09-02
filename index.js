@@ -1,9 +1,12 @@
 import app from "./app.js";
+import StateManager from "./recursivejs/StateManager.js";
 import VDOM from "./recursivejs/VDOM.js";
 
-window.vDOM = new VDOM({
+new StateManager({ theme: VDOM.setState(true) });
+
+new VDOM({
      appFunction: () => app(),
      root: document.getElementById("app"),
 });
 
-window.vDOM.render();
+vDOM.render();

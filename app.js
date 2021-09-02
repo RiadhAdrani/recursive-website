@@ -6,7 +6,6 @@ import TextView from "./recursivejs/components/TextView.js";
 import CreateComponent from "./recursivejs/CreateComponent.js";
 import InlineSelector from "./recursivejs/InlineSelector.js";
 import Router from "./recursivejs/Router.js";
-import VDOM from "./recursivejs/VDOM.js";
 
 const underConstruction = (text) =>
      Container({
@@ -47,7 +46,7 @@ window.router = new Router([
           component: () => underConstruction("Docs"),
      }),
      Router.Route({
-          name: "/tutorial",
+          name: "/tutorials",
           title: "Tutorials",
           component: () => underConstruction("Tutorial"),
      }),
@@ -58,8 +57,6 @@ window.router = new Router([
      }),
 ]);
 
-window.theme = VDOM.setState(true);
-
 const body = () =>
      new CreateComponent({
           tag: "div",
@@ -68,11 +65,11 @@ const body = () =>
           inlineStyle: InlineSelector({
                minHeight: "100vh",
                width: "100%",
-               background: `${window.theme.value ? "#1e1e1e" : "white"}`,
+               background: `${window.stateManager.data.theme.value ? "#1e1e1e" : "white"}`,
                flex: 1,
                flexDirection: "column",
                display: "flex",
-               color: `${window.theme.value ? "white" : "#1e1e1e"}`,
+               color: `${window.stateManager.data.theme.value ? "white" : "#1e1e1e"}`,
                fontFamily: "Trebuchet MS",
           }),
           children: [

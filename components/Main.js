@@ -11,8 +11,8 @@ const Section = (title, paragraph) =>
                padding: "20px",
                minWidth: "250px",
                boxShadow: "1px 1px 1px 2px #00000022",
-               backgroundColor: `${window.theme.value ? "#212121" : "inherit"}`,
-               color: `${window.theme.value ? "white" : "inherit"}`,
+               backgroundColor: `${window.stateManager.data.theme.value ? "#212121" : "inherit"}`,
+               color: `${window.stateManager.data.theme.value ? "white" : "inherit"}`,
                margin: "10px 25px",
           }),
           children: [TitleView.h3({ text: title }), TextView({ text: paragraph })],
@@ -28,7 +28,11 @@ const roadMapElement = (text, isOdd) =>
                padding: "15px",
                cursor: "help",
                border: `0.5px solid ${
-                    isOdd ? "transparent" : window.theme.value ? "white" : "#212421"
+                    isOdd
+                         ? "transparent"
+                         : window.stateManager.data.theme.value
+                         ? "white"
+                         : "#212421"
                }`,
           }),
      });

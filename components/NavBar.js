@@ -6,7 +6,7 @@ import InlineSelector from "../recursivejs/InlineSelector.js";
 const MenuButton = ({ text, onClick, isSelected }) =>
      Button({
           text: `${text}`,
-          className: `${window.theme.value ? "menu-button-dark" : "menu-button"}`,
+          className: `${window.stateManager.data.theme.value ? "menu-button-dark" : "menu-button"}`,
           style: InlineSelector({
                display: "inline",
                margin: "10px 10px",
@@ -16,7 +16,7 @@ const MenuButton = ({ text, onClick, isSelected }) =>
                textDecoration: `${isSelected ? "underline" : "none"}`,
                borderRadius: "5px",
                cursor: "pointer",
-               color: `${window.theme.value ? "white" : "#1e1e1e"}`,
+               color: `${window.stateManager.data.theme.value ? "white" : "#1e1e1e"}`,
                fontFamily: "Trebuchet MS",
                backgroundColor: "inherit",
                outline: "none",
@@ -43,20 +43,22 @@ export default ({ buttons }) =>
                padding: "20px 20px",
                flexWrap: "wrap",
                justifyContent: "space-evenly",
-               backgroundColor: `${window.theme.value ? "#1e1e1e" : "white"}`,
+               backgroundColor: `${window.stateManager.data.theme.value ? "#1e1e1e" : "white"}`,
           }),
           children: [
                TextView({
                     text: "Recursive",
                     style: InlineSelector({
                          fontSize: "1.4em",
-                         color: `${window.theme.value ? "#5cb85c" : "white"}`,
+                         color: `${window.stateManager.data.theme.value ? "#5cb85c" : "white"}`,
                          padding: "10px 20px",
                          borderRadius: "5px",
                          fontWeight: "bold",
                          margin: "0px",
                          textTransform: "uppercase",
-                         backgroundColor: `${window.theme.value ? "transparent" : "#5cb85c"}`,
+                         backgroundColor: `${
+                              window.stateManager.data.theme.value ? "transparent" : "#5cb85c"
+                         }`,
                     }),
                }),
                Container({
@@ -79,11 +81,14 @@ export default ({ buttons }) =>
                }),
                Button({
                     text: `${
-                         window.theme.value ? "Switch to Light Theme" : "Switch to Dark Theme"
+                         window.stateManager.data.theme.value
+                              ? "Switch to Light Theme"
+                              : "Switch to Dark Theme"
                     }`,
                     events: {
                          onClick: () => {
-                              window.theme.setValue(!window.theme.value);
+                              const current = window.stateManager.data.theme.value;
+                              window.stateManager.data.theme.setValue(!current);
                          },
                     },
                     style: InlineSelector({
@@ -91,8 +96,10 @@ export default ({ buttons }) =>
                          padding: "10px",
                          borderRadius: "5px",
                          cursor: "pointer",
-                         backgroundColor: `${window.theme.value ? "white" : "#2e2e2e"}`,
-                         color: `${window.theme.value ? "#2e2e2e" : "white"}`,
+                         backgroundColor: `${
+                              window.stateManager.data.theme.value ? "white" : "#2e2e2e"
+                         }`,
+                         color: `${window.stateManager.data.theme.value ? "#2e2e2e" : "white"}`,
                     }),
                }),
           ],
