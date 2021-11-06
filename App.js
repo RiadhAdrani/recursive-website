@@ -7,6 +7,7 @@ import Router from "./recursivejs/router/Router.js";
 import Map from "./map/Map.js";
 
 window.theme = GetRandomTheme();
+
 window.framework = "Kompose";
 
 window.router = new Router([...Map()]);
