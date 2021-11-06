@@ -1,12 +1,5 @@
-import app from "./app.js";
-import StateManager from "./recursivejs/StateManager.js";
-import VDOM from "./recursivejs/VDOM.js";
+import App from "./App.js";
 
-new StateManager({ theme: VDOM.setState(true) });
-
-new VDOM({
-     appFunction: () => app(),
-     root: document.getElementById("app"),
-});
-
+vDOM.app = () => App();
+vDOM.devMode = false;
 vDOM.render();

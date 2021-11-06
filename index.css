@@ -1,11 +1,10 @@
-.menu-button:hover {
-     background-color: #1e1e1e !important;
-     color: white !important;
-     transform: scale(1.1);
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap");
 
-.menu-button-dark:hover {
-     background-color: white !important;
-     color: #1e1e1e !important;
-     transform: scale(1.05);
+#app {
+     display: flex;
+     flex-direction: column;
+     min-height: 100%;
+     padding: 0px;
+     flex: 1;
+     margin: 0px;
 }
