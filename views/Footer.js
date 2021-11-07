@@ -33,6 +33,7 @@ export default () => {
                          AnchorView({
                               children: "Github",
                               href: "https://github.com/RiadhAdrani/recursive",
+                              target: "blank",
                               styleSheet: {
                                    className: "footer-link-github",
                                    normal: {

@@ -7,7 +7,11 @@ import Docs from "../views/Docs.js";
 
 export default () => {
      return [
-          Router.Route({ name: "/", title: framework, component: () => Welcome() }),
+          Router.Route({
+               name: "/",
+               title: framework,
+               component: () => Welcome(),
+          }),
           Router.Route({
                name: "/get-started",
                title: "Get Started",

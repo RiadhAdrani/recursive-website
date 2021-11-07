@@ -2,10 +2,10 @@ import H3 from "../../recursivejs/createcomponent/components/sectionning/Heading
 import Div from "../../recursivejs/createcomponent/components/text/DividerView.js";
 import Link from "../links/GetStartedLink.js";
 
-export default ({ title = "", links = [] }) => {
+export default ({ title = "", links = [], inverted = false }) => {
      return Div({
           styleSheet: {
-               className: "welcome-get-started-links",
+               className: `welcome-get-started-links${inverted ? "inverted" : ""}`,
                normal: {
                     display: "flex",
                     flexDirection: "column",
@@ -14,6 +14,9 @@ export default ({ title = "", links = [] }) => {
                     flex: 1,
                     padding: "20px",
                     transitionDuration: "0.3s",
+                    borderLeft: !inverted ? `none` : `solid 5px ${theme.secondary}`,
+                    borderRight: inverted ? `none` : `solid 5px ${theme.secondary}`,
+                    textAlign: inverted ? "right" : "",
                },
                hover: {
                     backgroundColor: theme.primaryAccent,
@@ -25,6 +28,12 @@ export default ({ title = "", links = [] }) => {
                               padding: "10px",
                          },
                     },
+                    {
+                         condition: "(max-width:400px)",
+                         normal: {
+                              textAlign: "center",
+                         },
+                    },
                ],
           },
           children: [
@@ -33,10 +42,11 @@ export default ({ title = "", links = [] }) => {
                     styleSheet: {
                          className: "welcome-get-started-title",
                          normal: {
-                              fontSize: "1.75em",
+                              fontSize: "2em",
                               margin: "10px 0px",
                               padding: "5px",
                               fontFamily: "Lato, sans-serif",
+                              textTransform: "uppercase",
                          },
                     },
                }),

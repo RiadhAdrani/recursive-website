@@ -15,7 +15,7 @@ export default () => {
           children: [
                WelcomeTop({
                     title: "Examples",
-                    subtitle: "To understand how this things works ...",
+                    subtitle: "To understand how this thing works ...",
                }),
                DocSection({
                     title: "Ouch ! Section is under construction",

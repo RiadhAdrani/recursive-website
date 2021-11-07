@@ -9,9 +9,10 @@ export default ({
      links = [],
      image = "../assets/welcome-fig.png",
 }) => {
-     const SectionList = WelcomeListSection({ links, title });
+     const SectionList = WelcomeListSection({ links, title, inverted: invert });
 
      const SectionImage = Div({
+          renderIf: false,
           styleSheet: {
                className: `welcome-section-img-wrapper-${invert ? "inverted" : ""}`,
                normal: {
