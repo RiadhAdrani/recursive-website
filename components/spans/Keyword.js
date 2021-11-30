@@ -1,18 +1,21 @@
+import AnchorView from "../../recursivejs/createcomponent/components/inlinetext/AnchorView.js";
 import Span from "../../recursivejs/createcomponent/components/inlinetext/SpanView.js";
 
-export default (text) => {
-     return Span({
+export default (text, link) => {
+     const span = Span({
           text,
           styleSheet: {
-               className: "key-word",
+               className: "keyword",
                normal: {
-                    backgroundColor: theme.secondaryVariant,
-                    padding: "3px",
-                    color: theme.secondary,
-                    marginLeft: "2px",
-                    marginRight: "2px",
-                    borderRadius: "5px",
+                    fontStyle: "italic",
+                    fontWeight: "bold",
+                    color: theme.primaryVariant,
                },
           },
      });
+
+     if (link) {
+          return AnchorView({ children: span, href: link, target: "blank" });
+     }
+     return span;
 };

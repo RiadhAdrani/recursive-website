@@ -13,6 +13,7 @@ export default ({ text, route }) => {
                     fontFamily: "Lato, sans-serif",
                     fontSize: "1.05em",
                     cursor: "pointer",
+                    animation: "slide-down 1s",
                },
                hover: {
                     borderBottomColor: theme.secondary,
@@ -23,6 +24,21 @@ export default ({ text, route }) => {
                          hover: {
                               borderBottomColor: "transparent",
                               backgroundColor: theme.primaryVariant,
+                         },
+                    },
+               ],
+               animations: [
+                    {
+                         name: "slide-down",
+                         steps: {
+                              "0%": {
+                                   transform: "translateX(-100px)",
+                                   opacity: 0,
+                              },
+                              "100%": {
+                                   transform: "translateX(0px)",
+                                   opacity: 1,
+                              },
                          },
                     },
                ],

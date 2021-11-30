@@ -10,6 +10,7 @@ export default ({ text }) => {
                     padding: "5px",
                     fontWeight: "bold",
                     fontFamily: "Roboto, sans-serif",
+                    textTransform: "uppercase",
                },
                mediaQueries: [
                     {

@@ -7,7 +7,9 @@ export default ({ title, text }) => {
           styleSheet: {
                className: "doc-section",
                normal: {
-                    padding: "20px",
+                    padding: "15px",
+                    margin: "5px 0px 5px 0px",
+                    borderRadius: "5px",
                },
           },
           children: [
@@ -15,7 +17,12 @@ export default ({ title, text }) => {
                     text: title,
                     styleSheet: {
                          className: "doc-section-title",
-                         normal: { margin: "0px", padding: "5px", fontSize: "1.3em" },
+                         normal: {
+                              margin: "0px",
+                              padding: "5px",
+                              fontSize: "1.5em",
+                              color: theme.primaryVariant,
+                         },
                     },
                }),
                P({
@@ -26,7 +33,7 @@ export default ({ title, text }) => {
                               margin: "0px",
                               padding: "10px",
                               lineHeight: "1.75em",
-                              margin: "0px 0px 0px 10px",
+                              margin: "0px 0px 0px 5px",
                          },
                     },
                }),

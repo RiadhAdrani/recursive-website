@@ -1,9 +1,9 @@
 import Router from "../recursivejs/router/Router.js";
-import Welcome from "../views/Welcome.js";
 import GetStarted from "./GetStarted.js";
 import GetStartedView from "../views/GetStarted.js";
 import Examples from "../views/Examples.js";
 import Docs from "../views/Docs.js";
+import Welcome from "../views/Welcome.js";
 
 export default () => {
      return [

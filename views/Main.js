@@ -1,5 +1,4 @@
 import Main from "../recursivejs/createcomponent/components/sectionning/MainView.js";
-import Welcome from "./Welcome.js";
 
 export default () => {
      return Main({

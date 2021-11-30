@@ -6,13 +6,16 @@ export default ({ title, subtitle }) => {
      return Div({
           styleSheet: {
                className: "welcome-top-section",
-               normal: { backgroundColor: theme.secondaryAccent, padding: "100px 50px" },
+               normal: {
+                    backgroundColor: theme.secondaryAccent,
+                    padding: "100px 50px",
+                    textAlign: "center",
+               },
                mediaQueries: [
                     {
                          condition: "(max-width:900px)",
                          normal: {
                               padding: "50px 10px",
-                              textAlign: "center",
                          },
                     },
                ],
