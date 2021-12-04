@@ -3,12 +3,19 @@ import P from "../../recursivejs/createcomponent/components/text/ParagraphView.j
 export default ({ text, link }) => {
      return P({
           text,
+          events: {
+               onClick: () => {
+                    if (link) {
+                         router.goTo(link);
+                    }
+               },
+          },
           styleSheet: {
-               className: "section-link",
+               className: `section-link-${link ? "allowed" : "not-allowed"}`,
                normal: {
                     margin: "2.5px 2.5px 2.5px 10px",
                     padding: "15px 20px",
-                    cursor: "not-allowed",
+                    cursor: link ? "pointer" : "not-allowed",
                     transition: "0.5s",
                },
                hover: {

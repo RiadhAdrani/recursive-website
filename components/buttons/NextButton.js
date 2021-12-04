@@ -2,7 +2,7 @@ import ButtonView from "../../recursivejs/createcomponent/components/forms/Butto
 
 export default ({ text, route }) => {
      return ButtonView({
-          text: text,
+          text: `Next : ${text}`,
           styleSheet: {
                className: "next-section-button",
                normal: {

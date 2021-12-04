@@ -33,10 +33,10 @@ export default () => {
                          WelcomeSection({
                               title: "Get Started",
                               links: [
-                                   { text: "Hello World", link: "" },
-                                   { text: "Styling", link: "" },
-                                   { text: "Animations", link: "" },
-                                   { text: "Media Queries", link: "" },
+                                   { text: "Hello World", link: "/get-started/set-up/" },
+                                   { text: "Styling", link: "/get-started/style-vs-css/" },
+                                   { text: "Animations", link: "/get-started/animations/" },
+                                   { text: "Media Queries", link: "/get-started/media-queries/" },
                               ],
                               image: "../assets/hello-world-snippet.png",
                          }),
@@ -44,9 +44,12 @@ export default () => {
                               title: `The new stuff`,
                               links: [
                                    { text: "Create your own component", link: "" },
-                                   { text: "Conditional Rendering" },
+                                   { text: "Conditional Rendering", links: "" },
                                    { text: "Events - Event listeners", link: "" },
-                                   { text: "Hooks - Lifecycle methods", link: "" },
+                                   {
+                                        text: "Hooks - Lifecycle methods",
+                                        link: "/get-started/hooks/",
+                                   },
                               ],
                               image: "../assets/advanced-snippet.png",
                               invert: true,

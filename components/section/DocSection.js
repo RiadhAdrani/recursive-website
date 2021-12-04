@@ -7,7 +7,7 @@ export default ({ title, text }) => {
           styleSheet: {
                className: "doc-section",
                normal: {
-                    padding: "15px",
+                    padding: "5px",
                     margin: "5px 0px 5px 0px",
                     borderRadius: "5px",
                },
@@ -31,9 +31,9 @@ export default ({ title, text }) => {
                          className: "doc-section-content",
                          normal: {
                               margin: "0px",
-                              padding: "10px",
+                              padding: "5px",
                               lineHeight: "1.75em",
-                              margin: "0px 0px 0px 5px",
+                              margin: "0px 0px 0px 0px",
                          },
                     },
                }),

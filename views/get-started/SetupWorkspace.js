@@ -63,6 +63,10 @@ export default () =>
      return Template({
           title: "Setup the Workspace",
           subtitle: `Say Hello`,
+          next: {
+               text: "State and data binding",
+               route: "/get-started/data-binding/",
+          },
           children: [
                DocSection({
                     title: "First,",
@@ -79,29 +83,28 @@ export default () =>
                `,
                     ],
                }),
-               BeautifulCodeView(htmlSnippets, "html"),
+               BeautifulCodeView({ text: htmlSnippets, language: "html" }),
                DocSection({
                     title: "Create an init.js file",
                     text: "Inside the just-created file, add these couple lines of code:",
                }),
-               BeautifulCodeView(initSnippet, "js"),
+               BeautifulCodeView({ text: initSnippet }),
                DocSection({
                     title: "In index.js",
                     text: "This new file will host all your configurations, and it will be the starting point of the app.",
                }),
-               BeautifulCodeView(indexSnippet, "js"),
+               BeautifulCodeView({ text: indexSnippet }),
                DocSection({
                     title: "Hello World",
                     text: "You guessed it, you should create another Javascript file named App.js which will export the UI component. This is not necessary but organization is key if you want to build the next Facebook or Youtube.",
                }),
-               BeautifulCodeView(appSnippet, "js", fn),
+               BeautifulCodeView({ text: appSnippet, format: fn }),
                Comment(
                     `The code above will render a red button containing a white text "Say'Hello World'" that will display an alert saying "Hello World".`
                ),
                Comment(
                     `And that's it for your first app! You should be on your way to create the new Facebook or Youtube !`
                ),
-               NextButton({ text: "Hello World >", route: "/" }),
           ],
      });
 };

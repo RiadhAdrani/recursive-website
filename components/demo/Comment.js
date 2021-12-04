@@ -4,7 +4,7 @@ export default (text) => {
      return P({
           text: text,
           styleSheet: {
-               className: "doc-section-content",
+               className: "doc-section-content-comment",
                normal: {
                     margin: "0px",
                     padding: "10px",
