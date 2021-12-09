@@ -123,7 +123,7 @@ export default () => {
           subtitle: "The illusion of directories",
           next: {
                text: "Refactoring your code",
-               route: "/get-started/refactor/",
+               route: "/get-started/refactor",
           },
           children: [
                DocSection({

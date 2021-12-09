@@ -1,15 +1,18 @@
-import ButtonView from "../../recursivejs/createcomponent/components/forms/ButtonView.js";
+import { Link } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ text, route }) => {
-     return ButtonView({
-          text,
+     return Link({
+          children: text,
+          to: route,
           styleSheet: {
                className: "header-button",
                normal: {
                     backgroundColor: "transparent",
                     color: "inherit",
+                    padding: "10px 5px",
                     border: "3px solid transparent",
                     transitionDuration: "0.25s",
+                    textDecoration: "none",
                     fontFamily: "Lato, sans-serif",
                     fontSize: "1.05em",
                     cursor: "pointer",
@@ -27,26 +30,6 @@ export default ({ text, route }) => {
                          },
                     },
                ],
-               animations: [
-                    {
-                         name: "slide-down",
-                         steps: {
-                              "0%": {
-                                   transform: "translateX(-100px)",
-                                   opacity: 0,
-                              },
-                              "100%": {
-                                   transform: "translateX(0px)",
-                                   opacity: 1,
-                              },
-                         },
-                    },
-               ],
-          },
-          events: {
-               onClick: () => {
-                    router.goTo(route);
-               },
           },
      });
 };

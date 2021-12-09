@@ -48,7 +48,7 @@ export default () => {
      return Template({
           title: "Stateful & Stateless Objects",
           subtitle: "One way data binding",
-          next: { text: "Routing", route: "/get-started/routing/" },
+          next: { text: "Routing", route: "/get-started/routing" },
           children: [
                DocSection({
                     title: "Stateful Object (SetState)",

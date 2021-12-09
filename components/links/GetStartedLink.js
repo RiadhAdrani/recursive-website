@@ -1,15 +1,9 @@
-import P from "../../recursivejs/createcomponent/components/text/ParagraphView.js";
+import { Link } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ text, link }) => {
-     return P({
-          text,
-          events: {
-               onClick: () => {
-                    if (link) {
-                         router.goTo(link);
-                    }
-               },
-          },
+     return Link({
+          children: text,
+          to: link,
           styleSheet: {
                className: `section-link-${link ? "allowed" : "not-allowed"}`,
                normal: {
@@ -17,6 +11,8 @@ export default ({ text, link }) => {
                     padding: "15px 20px",
                     cursor: link ? "pointer" : "not-allowed",
                     transition: "0.5s",
+                    color: "white",
+                    textDecoration: "none",
                },
                hover: {
                     transform: "translateX(10px)",

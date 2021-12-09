@@ -65,7 +65,7 @@ export default () =>
           subtitle: `Say Hello`,
           next: {
                text: "State and data binding",
-               route: "/get-started/data-binding/",
+               route: "/get-started/data-binding",
           },
           children: [
                DocSection({

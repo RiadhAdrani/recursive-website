@@ -71,7 +71,7 @@ export default () => {
           subtitle: "Avoiding repetitivness",
           next: {
                text: "Statefull vs Stateless Components",
-               route: "/get-started/statefull-vs-stateless/",
+               route: "/get-started/statefull-vs-stateless",
           },
           children: [
                DocSection({

@@ -73,7 +73,7 @@ export default () => {
                          }),
                     ],
                }),
-               NextButton({ text: "Setup your workspace", route: "/get-started/set-up/" }),
+               NextButton({ text: "Setup your workspace", route: "/get-started/set-up" }),
           ],
      });
 };

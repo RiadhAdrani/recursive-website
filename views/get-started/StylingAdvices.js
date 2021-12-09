@@ -5,7 +5,7 @@ export default () => {
      return Template({
           title: `Styling with ${framework}`,
           subtitle: "Just like the old days",
-          next: { text: "Hooks", route: "/get-started/hooks/" },
+          next: { text: "Hooks", route: "/get-started/hooks" },
           children: [
                DocSection({
                     title: "Something to keep in mind when using styleSheet",

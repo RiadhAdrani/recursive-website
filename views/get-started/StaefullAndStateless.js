@@ -11,7 +11,7 @@ export default () => {
      return Template({
           title: "Stateful vs Stateless Components",
           subtitle: "Handling data changes",
-          next: { text: "Styling and Style Sheet", route: "/get-started/style-vs-css/" },
+          next: { text: "Styling and Style Sheet", route: "/get-started/style-vs-css" },
           children: [
                DocSection({
                     title: "What do you mean by stateful ?",

@@ -3,7 +3,10 @@ import DividerView from "../recursivejs/createcomponent/components/text/DividerV
 import HeaderButton from "../components/buttons/HeaderButton.js";
 import HeaderTitle from "../components/titles/HeaderTitle.js";
 
-const b900px = { condition: "(max-width:900px)", normal: { flexDirection: "column" } };
+const b900px = {
+     condition: "(max-width:900px)",
+     normal: { flexDirection: "column", textAlign: "center" },
+};
 
 export default () => {
      return Header({

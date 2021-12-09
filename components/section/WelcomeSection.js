@@ -12,7 +12,9 @@ export default ({
      const SectionList = WelcomeListSection({ links, title, inverted: invert });
 
      const SectionImage = Div({
-          renderIf: false,
+          flags: {
+               renderIf: false,
+          },
           styleSheet: {
                className: `welcome-section-img-wrapper-${invert ? "inverted" : ""}`,
                normal: {

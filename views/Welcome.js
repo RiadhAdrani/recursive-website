@@ -33,10 +33,10 @@ export default () => {
                          WelcomeSection({
                               title: "Get Started",
                               links: [
-                                   { text: "Hello World", link: "/get-started/set-up/" },
-                                   { text: "Styling", link: "/get-started/style-vs-css/" },
-                                   { text: "Animations", link: "/get-started/animations/" },
-                                   { text: "Media Queries", link: "/get-started/media-queries/" },
+                                   { text: "Hello World", link: "/get-started/set-up" },
+                                   { text: "Styling", link: "/get-started/style-vs-css" },
+                                   { text: "Animations", link: "/get-started/animations" },
+                                   { text: "Media Queries", link: "/get-started/media-queries" },
                               ],
                               image: "../assets/hello-world-snippet.png",
                          }),
@@ -48,7 +48,7 @@ export default () => {
                                    { text: "Events - Event listeners", link: "" },
                                    {
                                         text: "Hooks - Lifecycle methods",
-                                        link: "/get-started/hooks/",
+                                        link: "/get-started/hooks",
                                    },
                               ],
                               image: "../assets/advanced-snippet.png",

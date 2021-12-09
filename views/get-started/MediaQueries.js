@@ -27,7 +27,7 @@ export default () => {
           subtitle: "Make your App responsive",
           next: {
                text: "When styling...",
-               route: "/get-started/styling-advice/",
+               route: "/get-started/styling-advice",
           },
           children: [
                DocSection({

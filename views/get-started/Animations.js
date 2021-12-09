@@ -30,7 +30,7 @@ export default () => {
      return Template({
           title: "Animations",
           subtitle: "StyleSheet and animations",
-          next: { text: "Media Queries", route: "/get-started/media-queries/" },
+          next: { text: "Media Queries", route: "/get-started/media-queries" },
           children: [
                DocSection({
                     title: "In the styleSheet",

@@ -47,7 +47,7 @@ export default () => {
      return Template({
           title: "Styling",
           subtitle: "Making your web app look beautiful",
-          next: { text: "Animations", route: "/get-started/animations/" },
+          next: { text: "Animations", route: "/get-started/animations" },
           children: [
                DocSection({
                     title: "Style vs Stylesheet",

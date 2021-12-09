@@ -2,7 +2,7 @@ import App from "./App.js";
 
 vDOM.app = () => App();
 
-vDOM.devMode = true;
+vDOM.devMode = false;
 
 vDOM.staticStyle = {
      import: [
@@ -20,13 +20,25 @@ vDOM.staticStyle = {
           "#app": {
                animation: "fade-in 1s",
           },
-          "h4,p": {
+          "h1,h2,h3,h4,p": {
                margin: "0px",
                padding: "5px",
           },
           h4: {
                fontFamily: "Roboto",
                fontWeight: "bold",
+          },
+          "::-webkit-scrollbar": {
+               width: "15px",
+          },
+          "::-webkit-scrollbar-track": {
+               boxShadow: "inset 0 0 5px grey",
+          },
+          "::-webkit-scrollbar-thumb": {
+               background: theme.primary,
+          },
+          "::-webkit-scrollbar-thumb:hover": {
+               background: theme.primaryAccent,
           },
      },
 };
