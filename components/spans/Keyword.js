@@ -1,5 +1,4 @@
-import AnchorView from "../../recursivejs/createcomponent/components/inlinetext/AnchorView.js";
-import Span from "../../recursivejs/createcomponent/components/inlinetext/SpanView.js";
+import { Span, A } from "../../recursivejs/createcomponent/Components.js";
 
 export default (text, link) => {
      const span = Span({
@@ -15,7 +14,7 @@ export default (text, link) => {
      });
 
      if (link) {
-          return AnchorView({ children: span, href: link, target: "blank" });
+          return A({ children: span, href: link, target: "blank" });
      }
      return span;
 };

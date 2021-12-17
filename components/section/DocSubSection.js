@@ -1,9 +1,7 @@
-import H3 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle3View.js";
-import SectionView from "../../recursivejs/createcomponent/components/sectionning/SectionView.js";
-import P from "../../recursivejs/createcomponent/components/text/ParagraphView.js";
+import { H3, Section, P } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ title, text }) => {
-     return SectionView({
+     return Section({
           styleSheet: {
                className: "doc-sub-section",
                normal: {

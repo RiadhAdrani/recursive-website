@@ -1,11 +1,10 @@
 import NextButton from "../components/buttons/NextButton.js";
 import DocSection from "../components/section/DocSection.js";
 import WelcomeTop from "../components/section/WelcomeTop.js";
-import AnchorView from "../recursivejs/createcomponent/components/inlinetext/AnchorView.js";
-import DividerView from "../recursivejs/createcomponent/components/text/DividerView.js";
+import { A, Div } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "get-started",
                normal: {
@@ -15,7 +14,7 @@ export default () => {
           },
           children: [
                WelcomeTop({ title: "Get Started", subtitle: "Create your first App!" }),
-               DividerView({
+               Div({
                     styleSheet: {
                          className: "get-started-doc-sections-wrapper",
                          normal: {
@@ -53,7 +52,7 @@ export default () => {
                               title: "Create a new project from scratch",
                               text: [
                                    `You can easily create a new ${framework} project by downloading the github repo and following the steps `,
-                                   AnchorView({
+                                   A({
                                         children: "here",
                                         href: "https://github.com/RiadhAdrani/recursive#getting-started",
                                         target: "blank",
@@ -64,7 +63,7 @@ export default () => {
                               title: "Stay informed",
                               text: [
                                    `We still not have an online presence, but you can star and watch the repo `,
-                                   AnchorView({
+                                   A({
                                         children: "RiadhAdrani/recursive",
                                         href: "https://github.com/RiadhAdrani/recursive",
                                         target: "blank",

@@ -1,10 +1,9 @@
 import DocSection from "../components/section/DocSection.js";
 import WelcomeTop from "../components/section/WelcomeTop.js";
-import AnchorView from "../recursivejs/createcomponent/components/inlinetext/AnchorView.js";
-import DividerView from "../recursivejs/createcomponent/components/text/DividerView.js";
+import { Div, A } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "examples-view",
                normal: {
@@ -21,7 +20,7 @@ export default () => {
                     title: "Ouch ! Section is under construction",
                     text: [
                          "To get started, you can follow the README of the github repository ",
-                         AnchorView({
+                         A({
                               children: "Here",
                               href: "https://github.com/RiadhAdrani/recursive#getting-started",
                               target: "blank",

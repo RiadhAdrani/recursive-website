@@ -1,7 +1,5 @@
-import Img from "../../recursivejs/createcomponent/components/multimedia/ImageView.js";
-import Section from "../../recursivejs/createcomponent/components/sectionning/SectionView.js";
-import Div from "../../recursivejs/createcomponent/components/text/DividerView.js";
 import WelcomeListSection from "./WelcomeListSection.js";
+import { Img, Section, Div } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({
      title = "Get Started",

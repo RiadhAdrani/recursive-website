@@ -1,7 +1,5 @@
 import HeaderTitle from "../components/titles/HeaderTitle.js";
-import AnchorView from "../recursivejs/createcomponent/components/inlinetext/AnchorView.js";
-import Footer from "../recursivejs/createcomponent/components/sectionning/FooterView.js";
-import P from "../recursivejs/createcomponent/components/text/ParagraphView.js";
+import { P, Footer, A } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
      return Footer({
@@ -30,7 +28,7 @@ export default () => {
                P({
                     text: [
                          "Help this project by contributing in ",
-                         AnchorView({
+                         A({
                               children: "Github",
                               href: "https://github.com/RiadhAdrani/recursive",
                               target: "blank",

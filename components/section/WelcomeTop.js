@@ -1,6 +1,4 @@
-import H1 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle1View.js";
-import H2 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle2View.js";
-import Div from "../../recursivejs/createcomponent/components/text/DividerView.js";
+import { H1, H2, Div } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ title, subtitle }) => {
      return Div({

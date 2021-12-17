@@ -1,9 +1,10 @@
 import NextButton from "../../components/buttons/NextButton.js";
 import WelcomeTop from "../../components/section/WelcomeTop.js";
-import DividerView from "../../recursivejs/createcomponent/components/text/DividerView.js";
+
+import { Div } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ title, subtitle, children, next }) => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "get-started-section-wrapper",
                normal: {
@@ -13,7 +14,7 @@ export default ({ title, subtitle, children, next }) => {
           },
           children: [
                WelcomeTop({ title, subtitle }),
-               DividerView({
+               Div({
                     children: [
                          ...children,
                          next ? NextButton({ text: next.text, route: next.route }) : null,

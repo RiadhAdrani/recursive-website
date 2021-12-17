@@ -1,10 +1,7 @@
-import DividerView from "../../recursivejs/createcomponent/components/text/DividerView.js";
-import PreformattedTextView from "../../recursivejs/createcomponent/components/text/PreformattedTextView.js";
-import CodeView from "../../recursivejs/createcomponent/components/inlinetext/CodeView.js";
-import ButtonView from "../../recursivejs/createcomponent/components/forms/ButtonView.js";
+import { Div, Pre, Code, Button } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ text, language = "js", format }) => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "beautiful-code-view",
                normal: {
@@ -17,7 +14,7 @@ export default ({ text, language = "js", format }) => {
                forceRerender: true,
           },
           children: [
-               ButtonView({
+               Button({
                     text: "Copy",
                     styleSheet: {
                          className: "beautiful-code-view-copy-button",
@@ -48,8 +45,8 @@ export default ({ text, language = "js", format }) => {
                          },
                     },
                }),
-               PreformattedTextView({
-                    children: CodeView({
+               Pre({
+                    children: Code({
                          text,
                          className: `language-${language}`,
                     }),

@@ -1,4 +1,4 @@
-import H2 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle2View.js";
+import { H2 } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ text }) => {
      return H2({

@@ -1,10 +1,9 @@
 import DocSection from "../components/section/DocSection.js";
 import WelcomeTop from "../components/section/WelcomeTop.js";
-import DividerView from "../recursivejs/createcomponent/components/text/DividerView.js";
-import { A } from "../recursivejs/createcomponent/Components.js";
+import { A, Div } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "docs-view",
                normal: {

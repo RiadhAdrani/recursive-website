@@ -6,12 +6,12 @@ import Router from "./recursivejs/router/Router.js";
 import Map from "./map/Map.js";
 import { Div } from "./recursivejs/createcomponent/Components.js";
 
-window.framework = "Kompose";
+window.framework = "Recursive.Js";
 window.theme = GetRandomTheme();
 window.router = new Router(Map());
 
-export default () => {
-     return Div({
+const App = () =>
+     Div({
           styleSheet: {
                className: "app-wrapper",
                normal: {
@@ -23,4 +23,7 @@ export default () => {
           },
           children: [Header(), Main(), Footer()],
      });
+
+export default () => {
+     return App();
 };

@@ -1,6 +1,5 @@
-import H3 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle3View.js";
-import Div from "../../recursivejs/createcomponent/components/text/DividerView.js";
-import Link from "../links/GetStartedLink.js";
+import { H3, Div } from "../../recursivejs/createcomponent/Components.js";
+import GetStartedLink from "../links/GetStartedLink.js";
 
 export default ({ title = "", links = [], inverted = false }) => {
      return Div({
@@ -50,7 +49,7 @@ export default ({ title = "", links = [], inverted = false }) => {
                          },
                     },
                }),
-               ...links.map((item) => Link({ text: item.text, link: item.link })),
+               ...links.map((item) => GetStartedLink({ text: item.text, link: item.link })),
           ],
      });
 };

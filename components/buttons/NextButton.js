@@ -1,7 +1,7 @@
-import ButtonView from "../../recursivejs/createcomponent/components/forms/ButtonView.js";
+import { Button } from "../../recursivejs/createcomponent/Components.js";
 
 export default ({ text, route }) => {
-     return ButtonView({
+     return Button({
           text: `Next : ${text}`,
           styleSheet: {
                className: "next-section-button",

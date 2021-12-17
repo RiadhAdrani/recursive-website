@@ -1,4 +1,4 @@
-import P from "../../recursivejs/createcomponent/components/text/ParagraphView.js";
+import { P } from "../../../recursivejs/createcomponent/Components.js";
 
 export default (text) => {
      return P({

@@ -40,6 +40,10 @@ vDOM.staticStyle = {
           "::-webkit-scrollbar-thumb:hover": {
                background: theme.primaryAccent,
           },
+          "::selection": {
+               background: theme.primary,
+               color: theme.secondaryAccent,
+          },
      },
 };
 

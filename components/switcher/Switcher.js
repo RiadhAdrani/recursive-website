@@ -1,7 +1,7 @@
-import DividerView from "../../recursivejs/createcomponent/components/text/DividerView.js";
+import { Div } from "../../recursivejs/createcomponent/Components.js";
 
 export default (on, onClick) => {
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "input-switcher-wrapper",
                normal: {
@@ -19,7 +19,7 @@ export default (on, onClick) => {
           },
           events: { onClick: onClick },
           children: [
-               DividerView({
+               Div({
                     styleSheet: {
                          className: "cusor",
                          normal: {

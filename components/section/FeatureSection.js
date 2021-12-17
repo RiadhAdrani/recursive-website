@@ -1,11 +1,8 @@
-import H4 from "../../recursivejs/createcomponent/components/sectionning/HeadingTitle4View.js";
-import SectionView from "../../recursivejs/createcomponent/components/sectionning/SectionView.js";
-import DividerView from "../../recursivejs/createcomponent/components/text/DividerView.js";
-import P from "../../recursivejs/createcomponent/components/text/ParagraphView.js";
+import { H4, Section, P, Div } from "../../recursivejs/createcomponent/Components.js";
 
 export default () => {
      const feature = ({ title, content }) => {
-          return SectionView({
+          return Section({
                styleSheet: {
                     className: "feature-section-view",
                     normal: {
@@ -45,7 +42,7 @@ export default () => {
           });
      };
 
-     return DividerView({
+     return Div({
           styleSheet: {
                className: "feature-section",
                normal: {

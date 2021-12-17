@@ -1,7 +1,6 @@
-import Header from "../recursivejs/createcomponent/components/sectionning/HeaderView.js";
-import DividerView from "../recursivejs/createcomponent/components/text/DividerView.js";
 import HeaderButton from "../components/buttons/HeaderButton.js";
 import HeaderTitle from "../components/titles/HeaderTitle.js";
+import { Header, Div } from "../recursivejs/createcomponent/Components.js";
 
 const b900px = {
      condition: "(max-width:900px)",
@@ -24,7 +23,7 @@ export default () => {
           },
           children: [
                HeaderTitle({ text: framework }),
-               DividerView({
+               Div({
                     styleSheet: {
                          className: "header-buttons-wrapper",
                          normal: {

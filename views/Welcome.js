@@ -1,7 +1,8 @@
-import Div from "../recursivejs/createcomponent/components/text/DividerView.js";
 import WelcomeTop from "../components/section/WelcomeTop.js";
 import WelcomeSection from "../components/section/WelcomeSection.js";
 import FeatureSection from "../components/section/FeatureSection.js";
+
+import { Div } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
      return Div({
@@ -33,22 +34,34 @@ export default () => {
                          WelcomeSection({
                               title: "Get Started",
                               links: [
-                                   { text: "Hello World", link: "/get-started/set-up" },
-                                   { text: "Styling", link: "/get-started/style-vs-css" },
-                                   { text: "Animations", link: "/get-started/animations" },
-                                   { text: "Media Queries", link: "/get-started/media-queries" },
+                                   {
+                                        text: "Hello World : Create your first App",
+                                        link: "/get-started/set-up",
+                                   },
+                                   {
+                                        text: "Styling : Make the best looking UI",
+                                        link: "/get-started/style",
+                                   },
+                                   {
+                                        text: "State : One way data binding",
+                                        link: "/get-started/state",
+                                   },
+                                   {
+                                        text: "Routing : Create more",
+                                        link: "/get-started/routing",
+                                   },
                               ],
                               image: "../assets/hello-world-snippet.png",
                          }),
                          WelcomeSection({
                               title: `The new stuff`,
                               links: [
-                                   { text: "Create your own component", link: "" },
-                                   { text: "Conditional Rendering", links: "" },
-                                   { text: "Events - Event listeners", link: "" },
+                                   { text: "Events : Handle user's actions", link: "" },
+                                   { text: "Statefull and Stateless components", links: "" },
+                                   { text: "Flags : Conditional rendering and updates", link: "" },
                                    {
-                                        text: "Hooks - Lifecycle methods",
-                                        link: "/get-started/hooks",
+                                        text: "Hooks : Components lifecycle's methods",
+                                        link: "",
                                    },
                               ],
                               image: "../assets/advanced-snippet.png",
