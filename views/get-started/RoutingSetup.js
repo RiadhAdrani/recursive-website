@@ -1,4 +1,4 @@
-import { Li, Ul } from "../../../recursivejs/createcomponent/Components.js";
+import { Li, Ul } from "../../recursivejs/createcomponent/Components.js";
 import BeautifulCodeView from "../../components/demo/BeautifulCodeView.js";
 import Comment from "../../components/demo/Comment.js";
 import Step from "../../components/demo/Step.js";
