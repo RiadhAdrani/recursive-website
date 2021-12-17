@@ -1,4 +1,4 @@
-import { Main } from "../../recursivejs/createcomponent/Components.js";
+import { Main } from "../recursivejs/createcomponent/Components.js";
 
 export default () => {
      return Main({
