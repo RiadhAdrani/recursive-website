@@ -1,4 +1,5 @@
-import { Main } from "../recursivejs/createcomponent/Components.js";
+import { Components } from "../recursivejs/Recursive.js";
+const { Main } = Components;
 
 export default () => {
      return Main({

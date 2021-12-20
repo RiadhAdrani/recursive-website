@@ -1,4 +1,6 @@
-import { Link } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Link } = Components;
 
 export default ({ text, link }) => {
      return Link({

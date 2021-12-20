@@ -1,4 +1,6 @@
-import { H3, Section, P } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { H3, Section, P } = Components;
 
 export default ({ title, text }) => {
      return Section({

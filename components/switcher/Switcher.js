@@ -1,4 +1,6 @@
-import { Div } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Div } = Components;
 
 export default (on, onClick) => {
      return Div({

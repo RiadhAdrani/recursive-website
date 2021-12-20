@@ -1,4 +1,7 @@
-import { H3, Div } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { H3, Div } = Components;
+
 import GetStartedLink from "../links/GetStartedLink.js";
 
 export default ({ title = "", links = [], inverted = false }) => {

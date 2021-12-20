@@ -1,6 +1,8 @@
 import DocSection from "../components/section/DocSection.js";
 import WelcomeTop from "../components/section/WelcomeTop.js";
-import { Div, A } from "../recursivejs/createcomponent/Components.js";
+import { Components } from "../recursivejs/Recursive.js";
+
+const { Div, A } = Components;
 
 export default () => {
      return Div({

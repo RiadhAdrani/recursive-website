@@ -1,7 +1,7 @@
 import NextButton from "../../components/buttons/NextButton.js";
 import WelcomeTop from "../../components/section/WelcomeTop.js";
-
-import { Div } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+const { Div } = Components;
 
 export default ({ title, subtitle, children, next }) => {
      return Div({

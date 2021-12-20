@@ -1,4 +1,6 @@
-import { H2 } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { H2 } = Components;
 
 export default ({ text }) => {
      return H2({

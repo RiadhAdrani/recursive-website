@@ -1,4 +1,6 @@
-import { Span, A } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { A, Span } = Components;
 
 export default (text, link) => {
      const span = Span({

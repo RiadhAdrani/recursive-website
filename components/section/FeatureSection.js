@@ -1,4 +1,6 @@
-import { H4, Section, P, Div } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { H4, Section, Div, P } = Components;
 
 export default () => {
      const feature = ({ title, content }) => {

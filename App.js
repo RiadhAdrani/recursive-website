@@ -6,7 +6,8 @@ import GetRandomTheme from "./style/GetRandomTheme.js";
 import Router from "./recursivejs/RecursiveRouter/Router.js";
 import Map from "./map/Map.js";
 
-import { Div } from "./recursivejs/createcomponent/Components.js";
+import { Components } from "./recursivejs/Recursive.js";
+const { Div } = Components;
 
 window.framework = "Recursive.Js";
 window.theme = GetRandomTheme();

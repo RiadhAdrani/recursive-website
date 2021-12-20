@@ -1,4 +1,6 @@
-import { Div, Pre, Code, Button } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Div, Pre, Code, Button } = Components;
 
 export default ({ text, language = "js", format }) => {
      return Div({

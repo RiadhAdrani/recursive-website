@@ -1,4 +1,3 @@
-import { Li, Ul } from "../../recursivejs/createcomponent/Components.js";
 import BeautifulCodeView from "../../components/demo/BeautifulCodeView.js";
 import Comment from "../../components/demo/Comment.js";
 import Step from "../../components/demo/Step.js";
@@ -6,6 +5,9 @@ import Steps from "../../components/demo/Steps.js";
 import DocSection from "../../components/section/DocSection.js";
 import prism from "../../dependencies/prism/prism.js";
 import Template from "./Template.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Li, Ul } = Components;
 
 const import_router = `import Router from "./recursivejs/router/Router.js";`;
 

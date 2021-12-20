@@ -1,4 +1,6 @@
-import { Button } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Button } = Components;
 
 export default ({ text, route }) => {
      return Button({

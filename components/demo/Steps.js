@@ -1,4 +1,6 @@
-import { Ol, Li } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Ol, Li } = Components;
 
 export default (children) => {
      return Ol({

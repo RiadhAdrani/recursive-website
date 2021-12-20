@@ -1,14 +1,6 @@
-import {
-     Div,
-     H1,
-     H2,
-     H3,
-     H4,
-     P,
-     Sub,
-     Section,
-     Span,
-} from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Div, H1, H2, H3, H4, P, Sub, Section, Span } = Components;
 
 const webC = `Web Components are a set of features that provide a standard component model for the Web[1] allowing for encapsulation and interoperability of individual HTML elements.`;
 const c = {

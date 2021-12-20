@@ -1,6 +1,7 @@
 import HeaderButton from "../components/buttons/HeaderButton.js";
 import HeaderTitle from "../components/titles/HeaderTitle.js";
-import { Header, Div } from "../recursivejs/createcomponent/Components.js";
+import { Components } from "../recursivejs/Recursive.js";
+const { Header, Div } = Components;
 
 const b900px = {
      condition: "(max-width:900px)",

@@ -1,5 +1,6 @@
 import HeaderTitle from "../components/titles/HeaderTitle.js";
-import { P, Footer, A } from "../recursivejs/createcomponent/Components.js";
+import { Components } from "../recursivejs/Recursive.js";
+const { P, Footer, A } = Components;
 
 export default () => {
      return Footer({

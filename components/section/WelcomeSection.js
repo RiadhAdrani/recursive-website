@@ -1,5 +1,7 @@
 import WelcomeListSection from "./WelcomeListSection.js";
-import { Img, Section, Div } from "../../recursivejs/createcomponent/Components.js";
+import { Components } from "../../recursivejs/Recursive.js";
+
+const { Img, Section, Div } = Components;
 
 export default ({
      title = "Get Started",
