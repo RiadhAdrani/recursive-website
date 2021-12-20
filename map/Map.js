@@ -1,4 +1,3 @@
-import Router from "../recursivejs/router/Router.js";
 import RoutingSetup from "../views/get-started/RoutingSetup.js";
 import SetupWorkspace from "../views/get-started/SetupWorkspace.js";
 import StaefullAndStateless from "../views/get-started/StaefullAndStateless.js";
@@ -7,6 +6,7 @@ import GetStartedView from "../views/GetStarted.js";
 import Examples from "../views/Examples.js";
 import Docs from "../views/Docs.js";
 import Welcome from "../views/Welcome.js";
+import { Router } from "../recursivejs/Recursive.js";
 
 export default () =>
      Router.Route({

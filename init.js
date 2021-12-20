@@ -1,4 +1,4 @@
-import RecursiveDOM from "./recursivejs/RecursiveDOM.js";
+import { RecursiveDOM } from "./recursivejs/Recursive.js";
 
 RecursiveDOM.init(
      document.getElementById("app"),
