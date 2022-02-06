@@ -4,6 +4,8 @@ import { SetStyle } from "@riadh-adrani/recursive/Recursive-Style";
 import Router from "./router/Router";
 import MediaQuery from "./Style/MediaQuery";
 import NavBar from "./widgets/NavBar";
+import prismcss from "./prism/prismstyle";
+import Colors from "./Style/Colors";
 
 Router();
 
@@ -22,6 +24,7 @@ SetStyle({
                fontFamily: "Source Sans Pro",
                flexDirection: "column",
                lineHeight: "1.25",
+               fontSize: "17px",
           },
           p: {
                margin: "0px",
@@ -29,12 +32,13 @@ SetStyle({
           "h1,h2,h3,h4,h5,h6": {
                margin: "0px",
           },
+          ...prismcss({ background: "#1e1e1e" }),
      },
 });
 
 export default () =>
      Column({
-          styleSheet: { className: "app-wrapper", normal: {} },
+          styleSheet: { className: "app-wrapper", normal: { minHeight: "100vh" } },
           children: [
                NavBar(),
                Div({

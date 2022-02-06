@@ -1,6 +1,7 @@
 import { A, H2, I, Img, Input, Link, Row } from "@riadh-adrani/recursive/Recursive-Components";
 
 import logo from "../assets/logo.png";
+import Colors from "../Style/Colors";
 import MediaQuery from "../Style/MediaQuery";
 
 export default () =>
@@ -14,6 +15,7 @@ export default () =>
                     borderBottom: "1px solid #00000033",
                     position: "fixed",
                     width: "100%",
+                    zIndex: 2,
                     background: "white",
                },
                mediaQueries: MediaQuery({
@@ -35,6 +37,7 @@ export default () =>
                               flex: 1,
                               justifyContent: "start",
                               padding: "5px 10px",
+                              color: Colors.darkRed,
                          },
                     },
                     children: [
@@ -58,7 +61,7 @@ export default () =>
                     children: [
                          { title: "Home", to: "/" },
                          { title: "About", to: "/about" },
-                         { title: "Get Started", to: "/get-started" },
+                         { title: "Get Started", to: "/get-started/first-app" },
                          { title: "Docs", to: "/docs" },
                     ].map((item) =>
                          Link({

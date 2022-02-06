@@ -1,7 +1,6 @@
-import { Recursive } from "@riadh-adrani/recursive";
-import { DevMode } from "@riadh-adrani/recursive/Recursive";
+import { CreateComponent, DevMode, Render } from "@riadh-adrani/recursive/Recursive";
 import App from "./App";
 
-DevMode(false);
+DevMode(true);
 
-Recursive.Render(App);
+Render(App);

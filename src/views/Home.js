@@ -151,7 +151,7 @@ export default () => {
                          Img({ src: logo, height: 100, width: 100 }),
                          H1({
                               text: "Recursive",
-                              style: { color: "#cf2026", marginBottom: "10px" },
+                              style: { color: "#cf2026", marginBottom: "10px", fontSize: "3em" },
                          }),
                          P({
                               text: "A Javascript library to build beautiful component-based web apps",
