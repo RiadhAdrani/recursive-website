@@ -3,7 +3,9 @@ export default {
      title: "Setup Your work environment",
      content: [
           {
-               paragraph: `While you can work with vanilla {Javascript} , We recommend you to use {Node.js} .`,
+               paragraph: `While you can work with vanilla {Javascript} , 
+               We recommend you to use {Node.js} 
+               with which the tutorial will continue.`,
           },
           {
                subTitle: "Using create-recursive-app",

@@ -1,5 +1,6 @@
 import { Column, Row } from "@riadh-adrani/recursive/Recursive-Components";
-import { renderRouter } from "@riadh-adrani/recursive/Recursive-Router";
+import { renderRoute } from "@riadh-adrani/recursive/Recursive-Router";
+import MediaQuery from "../Style/MediaQuery";
 import GetStartedSideBar from "../widgets/GetStartedSideBar";
 
 export default () => {
@@ -19,8 +20,15 @@ export default () => {
                               marginLeft: "320px",
                               flex: 1,
                          },
+                         mediaQueries: MediaQuery({
+                              small: {
+                                   normal: {
+                                        marginLeft: "40px",
+                                   },
+                              },
+                         }),
                     },
-                    children: [renderRouter()],
+                    children: [renderRoute()],
                }),
           ],
      });

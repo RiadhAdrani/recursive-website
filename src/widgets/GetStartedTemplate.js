@@ -10,6 +10,7 @@ import GetStartedSectionTitle from "../components/GetStartedSectionTitle";
 import GetStartedSpacer from "../components/GetStartedSpacer";
 import GetStartedTip from "../components/GetStartedTip";
 import GetStartedWarning from "../components/GetStartedWarning";
+import prism from "../prism/prism";
 import Colors from "../Style/Colors";
 
 export default (json, index, all) => {
@@ -26,12 +27,21 @@ export default (json, index, all) => {
                     normal: {
                          color: Colors.darkRed,
                          fontSize: "0.9em",
+                         textAlign: "center",
                     },
                },
           });
      };
 
      return Column({
+          hooks: {
+               onRef: () => {
+                    prism();
+               },
+               onCreated: () => {
+                    prism();
+               },
+          },
           styleSheet: {
                className: "get-started-template",
                normal: {
@@ -85,6 +95,14 @@ export default (json, index, all) => {
                            `/get-started${all[index + 1].route}`,
                            "auto",
                            "0px"
+                      )
+                    : "",
+               index === all.length - 1
+                    ? StepLink(
+                           `The real journey just began! Check the documentation for more!`,
+                           "/docs",
+                           "auto",
+                           "auto"
                       )
                     : "",
           ],

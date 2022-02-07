@@ -18,7 +18,7 @@ export default {
           {
                paragraph: `Let's create an {input} field in which the user can enter some text. 
                We are not going to create {Components} from scratch (defining the tag, children and properties) 
-               because Recursive already provide (almost) all {htmlElements} as ready-made components, 
+               because Recursive already provide (almost) all {HtmlElements} as ready-made components, 
                all we need to do is importing them.`,
           },
           { spacer: "10px" },
@@ -26,7 +26,7 @@ export default {
           { spacer: "10px" },
           {
                paragraph: `We grabbed the {Column} component as well, which is a container that display items inside vertically. 
-               Think of it as a {<div>} with a {display} : {flex} and {flex-direction} : {column} .`,
+               Think of it as a {<div>} with a {display} set to {"flex"} and {flex-direction} set to {"column"} .`,
           },
           {
                paragraph: `Let's combine both components to display something:`,
@@ -75,7 +75,7 @@ export default {
           {
                paragraph: `Well it is not a very beautiful sight, 
                let's put the {Input} and the {Button} components
-               inside a {Row} .`,
+               inside a {Row} which is, like a {Column} , a flexbox with a horizontal alignment.`,
           },
           { spacer: "10px" },
           {
@@ -103,8 +103,8 @@ export default {
           {
                paragraph: `To keep track of data,
           we need to store it inside a {stateful} object,
-          which handled by the {setState} method. 
-          Let's make a stateful object that store of the input field.
+          which is handled by the {setState} method. 
+          Let's make a stateful object that store the input field value.
           Add the following line just before the {return} statement.`,
           },
           {
@@ -133,7 +133,7 @@ export default {
           },
           {
                paragraph: `The {setState} method return an array of {5} elements 
-               that we can use with a {decontructing assignment} 
+               that we can use with a {decontructing-assignment} 
                to give us the choice of naming our variables. 
                In our case we will focus on the first 2 elements: `,
           },
@@ -141,10 +141,14 @@ export default {
                spacer: "20px",
           },
           {
-               paragraph: `{value} - {any} : the value of the state object at the current rendering iteration.`,
+               paragraph: `{value} - {any} : 
+               the value of the state object at the current rendering iteration.
+               we will name the value {text} .`,
           },
           {
-               paragraph: `{setValue} - {function} : A method that allow the changing of the state, triggering an {update}`,
+               paragraph: `{setValue} - {function} : 
+               A method that allow the changing of the state, triggering an {update} . 
+               we will name the function {setText} .`,
           },
           {
                spacer: "20px",
@@ -187,7 +191,10 @@ return Column({
                We will add an event called {onChange} that listen for these changes and update the text value:`,
           },
           {
-               spacer: "20px",
+               warning: `"onChange" is the equivalent of "oninput". On the other hand, the counterpart of "onchange" event is "onChanged" in Recursive.`,
+          },
+          {
+               spacer: "10px",
           },
           {
                code: `Render(() => {
@@ -217,13 +224,10 @@ return Column({
   });
 });`,
           },
-          {
-               warning: `"onChange" is the equivalent of "oninput". On the other hand, the counterpart of "onchange" event is "onChanged" in Recursive.`,
-          },
           { spacer: "20px" },
           { subTitle: "Adding items" },
           {
-               paragraph: `To add items, we need first a state to store our items like with what we did for the {input} text, 
+               paragraph: `To add items, we need first a state to store our items like what we did with the {input} text, 
                but this time we will initiate it with an empty array.`,
           },
           { spacer: "20px" },
@@ -240,7 +244,7 @@ return Column({
           },
           { spacer: "20px" },
           {
-               paragraph: `Nothing display! 
+               paragraph: `Nothing displayed! 
                That's because we did't add any {todo} yet, 
                let's implement an {onClick} event on the button that add whatever we wrote to the {todos}`,
           },
@@ -251,7 +255,8 @@ return Column({
         events: {
             onClick: () => {
                 if (text.trim()) { // 👈 Check if the text is not empty
-                    setTodods([...todos, text]); // 👈 add an item to the todo list
+                    todos.push(text) // 👈 add an item to the todo list
+                    setTodods([...todos, text]); // 👈 update the state
                     setText(""); // 👈 reset the input field
                 }
             },
@@ -262,10 +267,9 @@ return Column({
           {
                paragraph: `Congratulation ! You can add todos now 🎉 ! 
                But our application is far from being ready, 
-               we need to be be able delete todos,
+               we need to be be able delete and
                search for todos,
-               and we will add an about page.
-               Let's look at {Styling} with Recursive.`,
+               But first, let's have a look at {Styling} with Recursive.`,
           },
      ],
 };

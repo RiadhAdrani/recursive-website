@@ -5,7 +5,7 @@ export default {
           {
                paragraph: `This guide aims to help you build your first Recursive App. If you are familiar
             with Javascript and functional programming in general, this will be a walk in the park! If 
-            you came from {React} or {Flutter} , you will feel right at home. But if you don"t have any 
+            you came from {React} or {Flutter} , you will feel right at home. But if you don't have any 
             experience with web development and programming in general, we recommend you to learn the
             basics ( {Javascript} , {HTML} and {CSS} ) which will help you with any library or Framework you 
             choose in the future.`,
@@ -27,7 +27,6 @@ export default {
                     "The basic structure of a Recursive App.",
                     "How to use components.",
                     "Styling your App.",
-                    "Create multiple screens or routes.",
                     "Use setState",
                ],
           },

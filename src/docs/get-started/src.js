@@ -6,11 +6,14 @@ export default {
                paragraph: `In the {src} folder, you will find a file named {index.js} , open it and have a look at the code, but don't worry, we will start from scratch.`,
           },
           {
-               tip: "index.js is the entry point that will communicate with the html file to, generate and update the UI.",
+               tip: "index.js is the entry point used by the index.html to generate the App.",
                tipTitle: "Project Entry Point",
           },
           {
                subTitle: "Starting from scratch:",
+          },
+          {
+               paragraph: "Delete all the code and follow along.",
           },
           {
                paragraph:

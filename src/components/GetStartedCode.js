@@ -1,4 +1,5 @@
 import { Code } from "@riadh-adrani/recursive/Recursive-Components";
+import MediaQuery from "../Style/MediaQuery";
 
 export default (code) => {
      return Code({
@@ -7,8 +8,18 @@ export default (code) => {
           },
           className: "language-javascript",
           text: code,
-          style: {
-               padding: "20px",
+          styleSheet: {
+               className: "get-started-code-snippet",
+               normal: {
+                    padding: "20px !important",
+               },
+               mediaQueries: MediaQuery({
+                    small: {
+                         normal: {
+                              fontSize: "0.8em !important",
+                         },
+                    },
+               }),
           },
      });
 };

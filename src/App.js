@@ -1,11 +1,10 @@
-import { Column, Div, EmptyBox } from "@riadh-adrani/recursive/Recursive-Components";
-import { renderRouter } from "@riadh-adrani/recursive/Recursive-Router";
+import { Column, Div } from "@riadh-adrani/recursive/Recursive-Components";
+import { renderRoute } from "@riadh-adrani/recursive/Recursive-Router";
 import { SetStyle } from "@riadh-adrani/recursive/Recursive-Style";
 import Router from "./router/Router";
 import MediaQuery from "./Style/MediaQuery";
 import NavBar from "./widgets/NavBar";
 import prismcss from "./prism/prismstyle";
-import Colors from "./Style/Colors";
 
 Router();
 
@@ -50,6 +49,6 @@ export default () =>
                          mediaQueries: MediaQuery({ small: { normal: { height: "130px" } } }),
                     },
                }),
-               renderRouter(),
+               renderRoute(),
           ],
      });
