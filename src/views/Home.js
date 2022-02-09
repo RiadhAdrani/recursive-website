@@ -1,13 +1,4 @@
-import {
-     Button,
-     Column,
-     H1,
-     H2,
-     Img,
-     P,
-     Row,
-     Span,
-} from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, H1, H2, Img, P, Row } from "@riadh-adrani/recursive/components";
 import HomeCard from "../components/HomeCard";
 import HomeFeature from "../components/HomeFeature";
 import logo from "../assets/logo.png";
@@ -157,7 +148,10 @@ export default () => {
                               text: "A Javascript library to build beautiful component-based web apps",
                          }),
                          Row({
-                              children: [HomeButton("Get Started"), HomeButton("Docs")],
+                              children: [
+                                   HomeButton("Get Started", "/get-started"),
+                                   HomeButton("Docs", "/docs"),
+                              ],
                          }),
                     ],
                }),

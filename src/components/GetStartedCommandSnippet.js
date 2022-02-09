@@ -1,4 +1,4 @@
-import { P } from "@riadh-adrani/recursive/Recursive-Components";
+import { P } from "@riadh-adrani/recursive/components";
 
 export default (code) => {
      return P({

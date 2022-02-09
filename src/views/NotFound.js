@@ -1,4 +1,4 @@
-import { Column, H1, H3, Link } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, H1, H3, Link } from "@riadh-adrani/recursive/components";
 import Colors from "../Style/Colors";
 
 export default () => {

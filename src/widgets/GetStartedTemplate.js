@@ -1,4 +1,4 @@
-import { Column, EmptyBox, Link, Row } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, EmptyBox, Link, Row } from "@riadh-adrani/recursive/components";
 import GetStartedCode from "../components/GetStartedCode";
 import GetStartedCommandSnippet from "../components/GetStartedCommandSnippet";
 import GetStartedDanger from "../components/GetStartedDanger";
@@ -28,6 +28,13 @@ export default (json, index, all) => {
                          color: Colors.darkRed,
                          fontSize: "0.9em",
                          textAlign: "center",
+                         padding: "5px",
+                    },
+                    hover: {
+                         background: Colors.grey,
+                    },
+                    active: {
+                         background: Colors.darkGrey,
                     },
                },
           });

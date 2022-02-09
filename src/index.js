@@ -1,4 +1,4 @@
-import { CreateComponent, DevMode, Render } from "@riadh-adrani/recursive/Recursive";
+import { DevMode, Render } from "@riadh-adrani/recursive/index";
 import App from "./App";
 
 DevMode(true);

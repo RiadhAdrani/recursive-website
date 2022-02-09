@@ -1,4 +1,4 @@
-import { P, Span } from "@riadh-adrani/recursive/Recursive-Components";
+import { P, Span } from "@riadh-adrani/recursive/components";
 
 export default (text) => {
      return P({

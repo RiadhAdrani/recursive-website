@@ -1,6 +1,6 @@
-import { Column, H2, I, Link, Row } from "@riadh-adrani/recursive/Recursive-Components";
-import { getRoute } from "@riadh-adrani/recursive/Recursive-Router";
-import { setState } from "@riadh-adrani/recursive/Recursive-State";
+import { Column, H2, I, Link, Row } from "@riadh-adrani/recursive/components";
+import { getRoute } from "@riadh-adrani/recursive/router";
+import { setState } from "@riadh-adrani/recursive/state";
 import get_started from "../docs/get-started/get_started";
 import Colors from "../Style/Colors";
 import MediaQuery from "../Style/MediaQuery";
@@ -15,7 +15,7 @@ export default () => {
                     minWidth: "300px",
                     maxWidth: "300px",
                     borderRight: "1px solid #00000033",
-                    overflowY: "hidden",
+                    overflowY: "auto",
                     padding: "10px",
                     position: "fixed",
                     height: "calc(100% - 70px)",
@@ -89,7 +89,10 @@ export default () => {
                                    Column({
                                         styleSheet: {
                                              className: "get-started-map",
-                                             normal: { flex: 1, overflowY: "hidden" },
+                                             normal: {
+                                                  flex: 1,
+                                                  overflowY: "auto",
+                                             },
                                              mediaQueries: MediaQuery({
                                                   small: {
                                                        normal: {
@@ -105,10 +108,16 @@ export default () => {
                                                        normal: {
                                                             textDecoration: "none",
                                                             padding: "10px",
-                                                            background: `#00000015`,
+                                                            background: Colors.grey,
                                                             color: "black",
                                                             margin: "5px 0px",
                                                             borderLeft: "5px solid transparent",
+                                                       },
+                                                       hover: {
+                                                            background: Colors.darkGrey,
+                                                       },
+                                                       active: {
+                                                            background: Colors.darkerGrey,
                                                        },
                                                   },
                                                   style: {

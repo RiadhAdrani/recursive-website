@@ -1,6 +1,6 @@
-import { Column, Div } from "@riadh-adrani/recursive/Recursive-Components";
-import { renderRoute } from "@riadh-adrani/recursive/Recursive-Router";
-import { SetStyle } from "@riadh-adrani/recursive/Recursive-Style";
+import { Column, Div } from "@riadh-adrani/recursive/components";
+import { renderRoute } from "@riadh-adrani/recursive/router";
+import { SetStyle } from "@riadh-adrani/recursive/style";
 import Router from "./router/Router";
 import MediaQuery from "./Style/MediaQuery";
 import NavBar from "./widgets/NavBar";

@@ -1,3 +1,3 @@
-import { EmptyBox } from "@riadh-adrani/recursive/Recursive-Components";
+import { EmptyBox } from "@riadh-adrani/recursive/components";
 
 export default (height) => EmptyBox({ height });

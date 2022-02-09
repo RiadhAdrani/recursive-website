@@ -7,4 +7,7 @@ export default {
      tip: "#d1ecf1",
      tipDarker: "#0c5460",
      blockBackground: "#f0f0f0",
+     grey: "#eaeaea",
+     darkGrey: "#dbdbdb",
+     darkerGrey: "#b9b9b9",
 };

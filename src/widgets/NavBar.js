@@ -1,4 +1,4 @@
-import { A, H2, I, Img, Input, Link, Row } from "@riadh-adrani/recursive/Recursive-Components";
+import { A, H2, I, Img, Input, Link, Row } from "@riadh-adrani/recursive/components";
 
 import logo from "../assets/logo.png";
 import Colors from "../Style/Colors";

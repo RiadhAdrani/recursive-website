@@ -1,4 +1,5 @@
-import { Code } from "@riadh-adrani/recursive/Recursive-Components";
+import { Code } from "@riadh-adrani/recursive/components";
+import Colors from "../Style/Colors";
 import MediaQuery from "../Style/MediaQuery";
 
 export default (code) => {
@@ -12,6 +13,22 @@ export default (code) => {
                className: "get-started-code-snippet",
                normal: {
                     padding: "20px !important",
+                    overflow: "auto",
+               },
+               webkitScrollbar: {
+                    height: "10px",
+               },
+               webkitScrollbarTrack: {
+                    background: Colors.grey,
+               },
+               webkitScrollbarThumb: {
+                    background: Colors.darkerGrey,
+               },
+               webkitScrollbarThumbHover: {
+                    background: Colors.darkerGrey,
+               },
+               webkitScrollbarThumbActive: {
+                    background: Colors.darkRed,
                },
                mediaQueries: MediaQuery({
                     small: {

@@ -1,4 +1,4 @@
-import { Li, Ul } from "@riadh-adrani/recursive/Recursive-Components";
+import { Li, Ul } from "@riadh-adrani/recursive/components";
 
 export default (list) => {
      return Ul({

@@ -1,4 +1,4 @@
-import { Column, H4, I, Img, P, Row, Span } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, H4, I, Img, P, Row, Span } from "@riadh-adrani/recursive/components";
 
 export default (title, icon, text) => {
      return Row({

@@ -1,4 +1,4 @@
-import { H3 } from "@riadh-adrani/recursive/Recursive-Components";
+import { H3 } from "@riadh-adrani/recursive/components";
 
 export default (text) => {
      return H3({

@@ -1,4 +1,4 @@
-import { Column, Div, H3, P, Row } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, Div, H3, P, Row } from "@riadh-adrani/recursive/components";
 
 export default (title, description, done = true) =>
      Row({

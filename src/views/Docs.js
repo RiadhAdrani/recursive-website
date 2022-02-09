@@ -1,4 +1,4 @@
-import { Column, H1, H4 } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, H1, H4 } from "@riadh-adrani/recursive/components";
 import Colors from "../Style/Colors";
 
 export default () => {
@@ -9,11 +9,18 @@ export default () => {
                     flex: 1,
                     alignItems: "center",
                     justifyContent: "center",
+                    textAlign: "center",
                },
           },
           children: [
-               H1({ text: "Coming Soon...", style: { color: Colors.darkRed } }),
-               H4({ text: "The website is still under construction ! Come back later !" }),
+               H1({
+                    text: "Coming Soon...",
+                    style: { color: Colors.darkRed, textAlign: "center" },
+               }),
+               H4({
+                    text: "The website is still under construction ! Come back later !",
+                    style: { textAlign: "center" },
+               }),
           ],
      });
 };

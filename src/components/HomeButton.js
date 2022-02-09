@@ -1,8 +1,12 @@
-import { Button } from "@riadh-adrani/recursive/Recursive-Components";
+import { Button } from "@riadh-adrani/recursive/components";
+import { goTo } from "@riadh-adrani/recursive/router";
 
-export default (text, onClick) =>
+export default (text, to) =>
      Button({
           text: text,
+          events: {
+               onClick: () => goTo(to),
+          },
           styleSheet: {
                className: "home-button",
                normal: {

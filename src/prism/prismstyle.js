@@ -41,7 +41,7 @@ export default ({
           },
           ':not(pre) > code[class*="language-"]': {
                padding: ".1em",
-               whiteSpace: "break-spaces",
+               whiteSpace: "pre",
           },
           ".token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata": {
                color: comment,

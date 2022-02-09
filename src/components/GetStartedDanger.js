@@ -1,4 +1,4 @@
-import { B, Column, P } from "@riadh-adrani/recursive/Recursive-Components";
+import { B, Column, P } from "@riadh-adrani/recursive/components";
 import Colors from "../Style/Colors";
 
 export default (code) => {

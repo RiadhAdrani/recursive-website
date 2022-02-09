@@ -1,4 +1,4 @@
-import { Column, H3, P } from "@riadh-adrani/recursive/Recursive-Components";
+import { Column, H3, P } from "@riadh-adrani/recursive/components";
 import MediaQuery from "../Style/MediaQuery";
 
 export default (title, text) => {
